@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Math Instant Quiz Program</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="con">
+    <div class="div1">
+        <div class="div2">
+            <h1>Instant Math Quiz Program</h1>
+        </div>
+
+        <p>Select the Arithmetic operation that you want to perform:
+            <select id="operation">
+            <option value="+">Addition</option>
+            <option value="-">Subtraction</option>
+            <option value="*">Multiplication</option>
+            <option value="/">Division</option>
+        </select>
+        </p>
+        <div id="math">
+            <button id="startButton" class="button" onclick="startQuiz()">Start Quiz</button>
+        </div>
+        <div id="message"></div>  <!--Declare msg as id so that so used to check valid answer-->
+
+        <div id="math">
+        <button class="button" onclick="generateQuestion()">Move to Next Question</button>
+    </div>
+        <div id="endScore"></div> <!--id declared used to display end quiz message-->
+        <button class="button" onclick="endQuiz()">End the Quiz</button>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
